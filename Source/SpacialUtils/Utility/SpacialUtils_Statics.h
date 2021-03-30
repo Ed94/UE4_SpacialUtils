@@ -23,7 +23,7 @@ enum class EDirectionViewMode : uint8
 UENUM(BlueprintType)
 enum class EViewMode : uint8
 {
-	Position,
+	Location,
 	Forward,
 	Right,
 	Up,
@@ -50,8 +50,8 @@ class SPACIALUTILS_API USpacialUtils_Statics : public UBlueprintFunctionLibrary
 
 public:
 
-	// NOT IMPLEMENTED
-	//static void WarmupPool();
+	//UFUNCTION(BlueprintCallable, Category = "Spacial Utils", meta = (DisplayName = "Warm-up Pool"))
+	//static void WarmupPool(int32 _preloadCount);
 
 	//static ASpacialViewer* Request_InstanceViewer();	
 
@@ -64,25 +64,31 @@ public:
 	// NOT IMPLEMENTED
 	//static void Release_InstanceViewer();
 
+	//UFUNCTION(BlueprintCallable, Category = "Spacial Utils", meta = (DisplayName = "Track: Actor Location"))
+	//static void Track_ActorLocation(AActor* _actorToTrack);
 
-	UFUNCTION(BlueprintCallable, Category = "Spacial Utils", Meta = (DisplayName = "Set Viewer Type"))
-	static void Set_ViewerType(UClass* _viewerType);
+	//UFUNCTION(BlueprintCallable, Category = "Spacial Utils", meta = (DisplayName = "Track: Actor Direction"))
+
+
+
+	//UFUNCTION(BlueprintCallable, Category = "Spacial Utils", Meta = (DisplayName = "Set Viewer Type"))
+	//static void Set_ViewerType(UClass* _viewerType);
+
+	//static void Track_Location(FVector& _vector);
+
+
+	//static void View_Vector(FVector _origin, FVector _vector);
+
+	//static void View_Component(FVector _origin, FVector _vector, EAxis _component);
 
 
 protected:
 
-	static UClass* viewerType;
-
-	//static TArray<ASpacialViewer> viewerPool_Actors;
+	//static UClass* viewerType;
 
 	//static TArray<ASpacialViewer*> viewerPool_Active;
 	//static TArray<ASpacialViewer*> viewerPool_Available;
 
-	//static TArray<ASpacialInstancedViewer> instancedViewerPool_Actors;
-
 	//static TArray<ASpacialInstancedViewer*> instancedViewerPool_Active;
 	//static TArray<ASpacialInstancedViewer*> instancedViewerPool_Available;
-
-	// Used when more than one viewer type can be dynamically requested.
-	//static TMap<UClass*, ViewerPool*> ViewerPools;
 };

@@ -34,8 +34,8 @@ public:
 	ASpacialInstancedViewer();
 
 
-	/*UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Position"))
-	void ShowPosition();
+	/*UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Location"))
+	void ShowLocation();
 
 	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Forward"))
 	void ShowForward(EDirectionViewMode _viewMode = EDirectionViewMode::Vector);

@@ -22,6 +22,9 @@ public:
 	USpacialView_Component();
 
 
+	//Show Location
+
+
 
 	// UActorComponent
 

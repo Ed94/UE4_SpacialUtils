@@ -23,12 +23,19 @@
 //
 //}
 
-void USpacialUtils_Statics::Set_ViewerType(UClass* _viewerType)
-{
-	// TODO: make sure they can't set it to none...
 
-	viewerType = _viewerType;
-}
+//void USpacialUtils_Statics::Track_ActorLocation(AActor* _actorToTrack)
+//{
+	
+//}
+
+
+//void USpacialUtils_Statics::Set_ViewerType(UClass* _viewerType)
+//{
+//	// TODO: make sure they can't set it to none...
+//
+//	viewerType = _viewerType;
+//}
 
 
 
@@ -36,7 +43,7 @@ void USpacialUtils_Statics::Set_ViewerType(UClass* _viewerType)
 
 // Public
 
-UClass* USpacialUtils_Statics::viewerType = ASpacialViewer::StaticClass();
+//UClass* USpacialUtils_Statics::viewerType = ASpacialViewer::StaticClass();
 
 // Protected
 

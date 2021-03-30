@@ -30,7 +30,7 @@ ASpacialViewer::ASpacialViewer()
 	SetupComponents();
 }
 
-void ASpacialViewer::ShowPosition()
+void ASpacialViewer::ShowLocation()
 {
 	LocationSphere->SetVisibility(true);
 }
@@ -145,7 +145,7 @@ void ASpacialViewer::ShowView(EViewMode _viewMode, EDirectionViewMode _direction
 {
 	switch (_viewMode)
 	{
-		case EViewMode::Position:
+		case EViewMode::Location:
 		{
 			LocationSphere->SetVisibility(true);
 
@@ -189,7 +189,7 @@ void ASpacialViewer::ShowView(EViewMode _viewMode, EDirectionViewMode _direction
 	}
 }
 
-void ASpacialViewer::HidePosition()
+void ASpacialViewer::HideLocation()
 {
 	LocationSphere->SetVisibility(false);
 }
@@ -235,11 +235,6 @@ void ASpacialViewer::HideView()
 	Up_Face          ->SetVisibility(false);
 	OrientationGnomon->SetVisibility(false);
 	ScaleCube        ->SetVisibility(false);
-}
-
-void ASpacialViewer::ToggleTracking()
-{
-
 }
 
 

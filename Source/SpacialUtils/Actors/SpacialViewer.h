@@ -34,8 +34,8 @@ public:
 	
 	// Visibility Access
 
-	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Position"))
-	void ShowPosition();
+	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Location"))
+	void ShowLocation();
 
 	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show Forward"))
 	void ShowForward(EDirectionViewMode _viewMode = EDirectionViewMode::Vector);
@@ -58,8 +58,10 @@ public:
 	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Show View"))
 	void ShowView(EViewMode _viewMode = EViewMode::Transform, EDirectionViewMode _directionViewMode = EDirectionViewMode::Vector, bool _useGnomon = true, bool _showScale = true);
 
+	// Hide
+
 	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Hide Position"))
-	void HidePosition();
+	void HideLocation();
 
 	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Hide Forward"))
 	void HideForward();
@@ -77,9 +79,6 @@ public:
 	void HideTransform();
 
 	void HideView();
-
-	UFUNCTION(BlueprintCallable, Meta = (DisplayName = "Toggle Tracking"))
-	void ToggleTracking();
 
 
 	UPROPERTY(EditAnywhere)
