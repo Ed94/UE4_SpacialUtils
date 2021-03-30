@@ -8,6 +8,30 @@ public class SpacialUtils : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
+		PublicDependencyModuleNames.AddRange
+		(
+			new string[] 
+			{ 
+				"Core", 
+				"CoreUObject", 
+				"Engine", 
+				"InputCore", 
+				"HeadMountedDisplay" 
+		});
+
+		PublicIncludePaths.AddRange
+		(
+			new string[]
+			{
+				 "SpacialUtils"              ,
+				 "SpacialUtils/Actors"       ,
+				 "SpacialUtils/Components"   ,
+				 "SpacialUtils/UserInterface",
+				 "SpacialUtils/UE_Template"  ,
+				 "SpacialUtils/Utility"      ,
+
+				// ... add public include paths required here ...
+			}
+		);
 	}
 }
